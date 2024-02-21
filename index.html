@@ -14,12 +14,21 @@
     </div>
     <div id="score">
       <h2>Score</h2>
-      <p>Levels completed: <span id="pairs-clicked">0</span></p>
-      <!-- <p>Pairs guessed: <span id="pairs-guessed">0</span></p> -->
+      <p>You are at level: <span id="levels-completed">0</span></p>
+      <p>Remaining lives: <span id="remaining-lives">0</span></p>
     </div>
     <div id="memory-board"></div>
     <div id="nextLevelBtnDiv"></div></div>
 
+    <div id="winningMessage" style="display: none;">
+      <p id="winningMessageWords">Congratulations, Anya Forger! You are now a step closer to becoming a spy and saving Westalis!</p>
+      <img id="celebrationImage" src="img/anyahehe.jpeg" alt="Celebration" />
+    </div>
+
+    <div id="losingMessage" style="display: none;">
+      <p id="losingMessageWords">You still got ways to go Anya Forger. Keep tarining!</p>
+      <img id="celebrationImage" src="img/anyakan.jpeg" alt="Celebration" />
+    </div>
     <!-- LINK THE JAVASCRIPT FILES HERE (keep in mind that the order in which you link them MATTERS) -->
     <script src="src/memory.js"></script>
     <script src="src/index.js"></script>

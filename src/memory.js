@@ -6,25 +6,24 @@ class Memory {
             ]
         this.pattern = [],
         this.boxes = ['b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7', 'b8', 'b9', 'b10', 'b11', 'b12', 'b13', 'b14', 'b15', 'b16', 'b17', 'b18', 'b19', 'b20', 'b21', 'b22', 'b23', 'b24'],
-        this.level = 1;
+        this.level = 1,
+        this.lives = 3,
+        this.playerChoices = []
     }
     //Methods:
     setCardsWithPatterns() {
-        console.log('Setting cards with patterns, level:', this.level); // Check method call and level
-        let availableBoxes = [...this.boxes]; 
+        console.log('Setting cards with patterns, level:', this.level); 
+        let availableBoxes = [...this.boxes];
+        this.pattern = []; 
         for(let i = 0; i < this.level; i++) {
             const randomIndex = Math.floor(Math.random() * availableBoxes.length);
-            const selectedBox = this.boxes[randomIndex];
-            console.log('Selected box:', selectedBox); // Which box is selected?
+            const selectedBox = availableBoxes[randomIndex]; 
+            console.log('Selected box:', selectedBox); 
             this.pattern.push(selectedBox);
-            availableBoxes.splice(randomIndex, 1);
+            availableBoxes.splice(randomIndex, 1); 
         }
-        console.log('Final pattern:', this.pattern); // What does the pattern look like at the end?
+        console.log('Final pattern:', this.pattern); 
         return this.pattern;
-    }
-
-    increaseLevel() {
-        this.level ++;
     }
 
 
@@ -42,20 +41,6 @@ class Memory {
  
 
         });
-    }
-
-    hidePatterns() {
-        console.log("HI from patternsv====>", this.pattern)
-        // this.pattern.forEach((patternId) => {
-        //     const cardElement = document.querySelector(`#${patternId} .front`);
-        //     const backElement = document.querySelector(`#${patternId} .back`);
-        //     cardElement.classList.toggle('turned');
-        //     console.log(cardElement);
-        //     setTimeout(() => {
-        //         cardElement.classList.toggle('turned');
-        //         backElement.classList.toggle('turned')
-        //     }, 500)
-        //     });
     }
 
     resetPatterns() {

@@ -19,73 +19,7 @@ body {
   box-shadow: inset 0px 0px 20px -6px #615961;
 }
 
-/* .card {
 
-  display: inline-block;
-  perspective: 300px;
-  transform-style: preserve-3d;
-  position: relative;
-}
-
-/* .card.turned {
-  pointer-events: none;
-} */
-
-/* .card.turned .front {
-
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        width: 142px;
-        height: 200px; 
-        transform: rotateY(-180deg) translateZ(1px);
-        border-radius: 50%; 
-        overflow: hidden; 
-        backface-visibility: hidden;
-     
-
-      
-  } */
-
-  /* .card.turned .front {
-    transform: rotateY(0deg);
-  }
-  .card.turned .back {
-    transform: rotateY(180deg);
-  }
-
-/* .card.turned .back {
-  transform: rotateY(180deg);
-} */
-
-/* .card .back,
-.card .front {
-  width: 71px;
-  height: 71px;
-  margin: 10px;
-  padding: 20px;
-  font-size: 64px;
-  transition: transform 2s ease;
-  background-size: contain;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-
-.card .back {
-  background-color: rgb(255,194,190);
-  /* backface-visibility: hidden; */
-/* }
-
-.card .front {
-  position: absolute;
-  left: 0;
-  top: 0;
-  transform: rotateY(-180deg) translateZ(1px);
-  backface-visibility: hidden;
-
-  
-}    */
 
 .card {
   display: inline-block;
@@ -175,3 +109,54 @@ p {
     width: 300px;
     height: 75px;
 }
+
+
+#winningMessage {
+
+  background: rgba(221, 221, 221, 0.15);
+  width: 820px;
+  height: 540px;
+  padding: 70px;
+  margin: 0px auto;
+  border-radius: 84px;
+  box-shadow: inset 0px 0px 20px -6px #615961;
+}
+
+#winningMessageWords {
+  color:white;
+  font-weight: bolder;
+  font-size: 25px;
+  text-align: center;
+  text-shadow: 0px 0px 20px #969696;
+}
+
+#losingMessage {
+  
+  background: rgba(221, 221, 221, 0.15);
+  width: 820px;
+  height: 540px;
+  padding: 70px;
+  margin: 0px auto;
+  border-radius: 84px;
+  box-shadow: inset 0px 0px 20px -6px #615961;
+
+}
+
+#losingMessageWords {
+  color:white;
+  font-weight: bolder;
+  font-size: 25px;
+  text-align: center;
+  text-shadow: 0px 0px 20px #969696;
+}
+
+#celebrationImage {
+  width: 300px; 
+  height: 300px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+  display: block;
+  margin: 0 auto; 
+  border: 5px solid white;
+}
+
