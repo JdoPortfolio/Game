@@ -75,4 +75,8 @@ nextButton.addEventListener('click', nextButtonHandler);
         hidePatterns();
     }
 
+
+
+
+    
 });
