@@ -6,6 +6,8 @@ let nextButton;
 let lastElementClicked; ///DO NO DELETE VERY IMPORTANT!!!!
 
 
+
+
 const memoryGame = new Memory();
 
 
@@ -58,8 +60,9 @@ nextButton.addEventListener('click', nextButtonHandler);
         // Iterates over each box ID
         for (let i = 0; i < boxes.length; i++) {
            
-            document.querySelector(`#${boxes[i]} .front`).style.backgroundImage = "url('img/anyapeanuts.jpeg')";
+            document.querySelector(`#${boxes[i]} .front`).style.backgroundImage = "url('img/anyapeanutscrop.png')";
         }
+        memoryGame.playerChoices = [];
 
     }
     
@@ -83,7 +86,7 @@ nextButton.addEventListener('click', nextButtonHandler);
 
     function checkLevelCompletion() {
         // Check if the completed level is 10
-        if (memoryGame.level === 3) {
+        if (memoryGame.level === 10) {
             // Hide the memoryscore div
             document.querySelector('#memory-board').style.display = 'none';
 
