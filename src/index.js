@@ -86,7 +86,7 @@ nextButton.addEventListener('click', nextButtonHandler);
 
     function checkLevelCompletion() {
         // Check if the completed level is 10
-        if (memoryGame.level === 10) {
+        if (memoryGame.level === 5) {
             // Hide the memoryscore div
             document.querySelector('#memory-board').style.display = 'none';
 
