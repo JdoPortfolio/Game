@@ -58,7 +58,7 @@ nextButton.addEventListener('click', nextButtonHandler);
         // Iterates over each box ID
         for (let i = 0; i < boxes.length; i++) {
            
-            document.querySelector(`#${boxes[i]} .front`).style.backgroundImage = "url('img/batman.jpg')";
+            document.querySelector(`#${boxes[i]} .front`).style.backgroundImage = "url('img/anyapeanuts.jpeg')";
         }
 
     }
@@ -117,6 +117,7 @@ nextButton.addEventListener('click', nextButtonHandler);
         //reset and move on to next level.
         // Check for game completion after updating the level
         checkLevelCompletion();
+        nextButton.removeEventListener('click', nextButtonHandler);
         memoryGame.level++;
         lastElementClicked.classList.toggle('turned');
         memoryGame.resetPatterns();
@@ -126,6 +127,7 @@ nextButton.addEventListener('click', nextButtonHandler);
 
         // Update the level display
         document.querySelector('#levels-completed').innerHTML = `${memoryGame.level}`;
+
 
     }
 
